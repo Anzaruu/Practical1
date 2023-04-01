@@ -80,6 +80,9 @@
     <Compile Include="Prices.xaml.cs">
       <DependentUpon>Prices.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ProdDataSet.cs">
+      <DependentUpon>ProdDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ProdDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

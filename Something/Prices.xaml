@@ -5,8 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Something"
         mc:Ignorable="d"
-        Title="Prices" Height="300" Width="300">
+        Title="Prices" Height="400" Width="400">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
         <DataGrid x:Name="Pric" SelectionChanged="Pric_SelectionChanged"/>
+        <TextBox x:Name="Add" Grid.Row="1"/>
+        <Button x:Name="AddPric" Grid.Row="2" Content="Добавить цену" Click="AddPric_Click"/>
+        <Button x:Name="DeletePric" Grid.Row="3" Content="Удалить цену" Click="DeletePric_Click"/>
     </Grid>
 </Window>
